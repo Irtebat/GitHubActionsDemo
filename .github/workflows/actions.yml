@@ -23,6 +23,7 @@ jobs:
 
       - name: execute py script # run main.py
         env:
+          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
           ISSUE_URL: ${{ github.event.issue.html_url }}
         run: python main.py
 

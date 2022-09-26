@@ -27,7 +27,7 @@ except KeyError:
 if __name__ == "__main__":
     logger.info(f'New Issue Added at {ISSUE_URL}')
 
-    # token = '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'
+    # token = os.environ["PERSONAL_TOKEN"]
     # headers = {'Authorization': f'token {token}'}
     # repoIssueUrl=f"https://api.github.com/repos/Irtebat/GitHubActionsDemo/issues/1/comments"
 
